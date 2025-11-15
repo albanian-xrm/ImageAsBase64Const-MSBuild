@@ -34,7 +34,6 @@ steps:
   displayName: Build AlbanianXrm.ImageAsBase64Const.MSBuild.sln
   inputs:
     solution: 'AlbanianXrm.ImageAsBase64Const.MSBuild.sln'
-    configuration: 'Release'
 
 - task: NuGetCommand@2
   displayName: Restore AlbanianXrm.ImageAsBase64Const.Tests.sln
@@ -45,14 +44,13 @@ steps:
   displayName: Build AlbanianXrm.ImageAsBase64Const.Tests.sln
   inputs:
     solution: 'tests\AlbanianXrm.ImageAsBase64Const.Tests.sln'
-    configuration: 'Release'
 
 - pwsh: |
     New-Item -ItemType Directory -Force -Path $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild
-    $nugetPackage =  get-item  AlbanianXrm.ImageAsBase64Const.MSBuild\bin\Release\AlbanianXrm.ImageAsBase64Const.MSBuild.*.nupkg
+    $nugetPackage =  get-item  AlbanianXrm.ImageAsBase64Const.MSBuild\bin\Debug\AlbanianXrm.ImageAsBase64Const.MSBuild.*.nupkg
     $cdsProjPackage.Name.TrimStart("AlbanianXrm.ImageAsBase64Const.MSBuild.").TrimEnd(".nupkg") | Out-File -FilePath $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild\Version.txt
     Rename-Item $cdsProjPackage AlbanianXrm.ImageAsBase64Const.MSBuild.nupkg
-    Move-Item AlbanianXrm.ImageAsBase64Const.MSBuild/bin/Release/AlbanianXrm.ImageAsBase64Const.MSBuild.nupkg -destination $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild
+    Move-Item AlbanianXrm.ImageAsBase64Const.MSBuild/bin/Debug/AlbanianXrm.ImageAsBase64Const.MSBuild.nupkg -destination $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild
     Copy-Item AlbanianXrm.ImageAsBase64Const.MSBuild/ReleaseNotes.txt -Destination $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild\ReleaseNotes.txt
   displayName: Move packages to Artifacts Staging Directory
 
