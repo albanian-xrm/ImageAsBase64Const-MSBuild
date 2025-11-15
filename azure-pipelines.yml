@@ -51,8 +51,8 @@ steps:
 - pwsh: |
     New-Item -ItemType Directory -Force -Path $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild
     $nugetPackage =  get-item  AlbanianXrm.ImageAsBase64Const.MSBuild\bin\Debug\AlbanianXrm.ImageAsBase64Const.MSBuild.*.nupkg
-    $cdsProjPackage.Name.TrimStart("AlbanianXrm.ImageAsBase64Const.MSBuild.").TrimEnd(".nupkg") | Out-File -FilePath $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild\Version.txt
-    Rename-Item $cdsProjPackage AlbanianXrm.ImageAsBase64Const.MSBuild.nupkg
+    $nugetPackage.Name.TrimStart("AlbanianXrm.ImageAsBase64Const.MSBuild.").TrimEnd(".nupkg") | Out-File -FilePath $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild\Version.txt
+    Rename-Item $nugetPackage AlbanianXrm.ImageAsBase64Const.MSBuild.nupkg
     Move-Item AlbanianXrm.ImageAsBase64Const.MSBuild/bin/Debug/AlbanianXrm.ImageAsBase64Const.MSBuild.nupkg -destination $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild
     Copy-Item AlbanianXrm.ImageAsBase64Const.MSBuild/ReleaseNotes.txt -Destination $(Build.ArtifactStagingDirectory)\AlbanianXrm.ImageAsBase64Const.MSBuild\ReleaseNotes.txt
   displayName: Move packages to Artifacts Staging Directory
