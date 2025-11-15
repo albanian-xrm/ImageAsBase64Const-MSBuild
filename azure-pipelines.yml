@@ -10,7 +10,7 @@
 #   distributed under the License is distributed on an "AS IS" BASIS,
 #   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #   See the License for the specific language governing permissions and
-#  limitations under the License.
+#   limitations under the License.
 
 trigger:
 - main
@@ -39,12 +39,12 @@ steps:
 - task: NuGetCommand@2
   displayName: Restore AlbanianXrm.ImageAsBase64Const.Tests.sln
   inputs:
-    restoreSolution: 'AlbanianXrm.ImageAsBase64Const.Tests\AlbanianXrm.ImageAsBase64Const.Tests.sln'
+    restoreSolution: 'tests\AlbanianXrm.ImageAsBase64Const.Tests.sln'
 
 - task: VSBuild@1
   displayName: Build AlbanianXrm.ImageAsBase64Const.Tests.sln
   inputs:
-    solution: 'AlbanianXrm.ImageAsBase64Const.Tests\AlbanianXrm.ImageAsBase64Const.Tests.sln'
+    solution: 'tests\AlbanianXrm.ImageAsBase64Const.Tests.sln'
     configuration: 'Release'
 
 - pwsh: |
