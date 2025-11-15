@@ -1,0 +1,2 @@
+﻿v1.0.0: 
+ - First Release. Can convert images to Base64 strings for use as Icons in a XrmToolBox tool.

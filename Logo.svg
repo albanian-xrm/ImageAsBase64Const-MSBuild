@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+   Copyright 2025 AlbanianXrm <albanian@xrm.al>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<svg
+   version="1.1"
+   width="300"
+   height="300"
+   id="svg37"
+   sodipodi:docname="Logo.svg"
+   inkscape:export-filename="..\ImageAsBase64Const-Generator\AlbanianXrm.ImageAsBase64Const.MSBuild\Logo.png"
+   inkscape:export-xdpi="40.959999"
+   inkscape:export-ydpi="40.959999"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview37"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffff00"
+     inkscape:zoom="4.0566667"
+     inkscape:cx="150"
+     inkscape:cy="150"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg37" />
+  <defs
+     id="defs1">
+    <rect
+       x="79.129006"
+       y="164.66721"
+       width="207.80608"
+       height="123.50041"
+       id="rect39" />
+    <rect
+       x="82.087099"
+       y="176.9926"
+       width="206.08052"
+       height="111.91454"
+       id="rect38" />
+    <rect
+       x="91.700904"
+       y="188.08546"
+       width="181.42975"
+       height="98.603122"
+       id="rect37" />
+    <circle
+       id="Circle0"
+       r="32"
+       cy="0"
+       cx="0"
+       stroke-width="16"
+       fill="green"
+       stroke="gold" />
+    <circle
+       id="Circle1"
+       r="10"
+       cy="-120"
+       cx="0"
+       stroke-width="10"
+       fill="green"
+       stroke="gold" />
+    <circle
+       id="Circle2"
+       r="6"
+       cy="-104.5499"
+       cx="39"
+       stroke-width="6"
+       fill="green"
+       stroke="gold" />
+    <circle
+       id="Circle3"
+       r="6"
+       cy="-104.5499"
+       cx="-39"
+       stroke-width="6"
+       fill="green"
+       stroke="gold" />
+    <line
+       id="Line1"
+       x1="0"
+       y1="-32"
+       x2="0"
+       y2="-110"
+       stroke-width="16"
+       stroke="gold" />
+    <path
+       id="Path1"
+       d="M16 -27.71281 L28 -48.4974 L28 -84.4974 L36 -99.3538"
+       stroke-width="10"
+       fill="transparent"
+       stroke="gold" />
+    <path
+       id="Path2"
+       d="M-16 -27.71281 L-28 -48.4974 L-28 -84.4974 L-36 -99.3538"
+       stroke-width="10"
+       fill="transparent"
+       stroke="gold" />
+  </defs>
+  <rect
+     x="5"
+     y="5"
+     width="290"
+     height="290"
+     stroke="darkgreen"
+     stroke-width="10"
+     fill="green"
+     rx="15"
+     ry="15"
+     id="rect1" />
+  <use
+     x="150"
+     y="150"
+     xlink:href="#Circle0"
+     id="use1" />
+  <use
+     xlink:href="#Line1"
+     transform="translate(150,150)"
+     id="use2" />
+  <use
+     xlink:href="#Circle1"
+     transform="translate(150,150)"
+     id="use3" />
+  <use
+     xlink:href="#Path1"
+     transform="translate(150,150)"
+     id="use4" />
+  <use
+     xlink:href="#Path2"
+     transform="translate(150,150)"
+     id="use5" />
+  <use
+     xlink:href="#Circle2"
+     transform="translate(150,150)"
+     id="use6" />
+  <use
+     xlink:href="#Circle3"
+     transform="translate(150,150)"
+     id="use7" />
+  <use
+     xlink:href="#Line1"
+     transform="translate(150,150) rotate(60)"
+     id="use8" />
+  <use
+     xlink:href="#Circle1"
+     transform="translate(150,150) rotate(60)"
+     id="use9" />
+  <use
+     xlink:href="#Path1"
+     transform="translate(150,150) rotate(60)"
+     id="use10" />
+  <use
+     xlink:href="#Path2"
+     transform="translate(150,150) rotate(60)"
+     id="use11" />
+  <use
+     xlink:href="#Circle2"
+     transform="translate(150,150) rotate(60)"
+     id="use12" />
+  <use
+     xlink:href="#Circle3"
+     transform="translate(150,150) rotate(60)"
+     id="use13" />
+  <use
+     xlink:href="#Line1"
+     transform="translate(150,150) rotate(120)"
+     id="use14" />
+  <use
+     xlink:href="#Circle1"
+     transform="translate(150,150) rotate(120)"
+     id="use15" />
+  <use
+     xlink:href="#Path1"
+     transform="translate(150,150) rotate(120)"
+     id="use16" />
+  <use
+     xlink:href="#Path2"
+     transform="translate(150,150) rotate(120)"
+     id="use17" />
+  <use
+     xlink:href="#Circle2"
+     transform="translate(150,150) rotate(120)"
+     id="use18" />
+  <use
+     xlink:href="#Circle3"
+     transform="translate(150,150) rotate(120)"
+     id="use19" />
+  <use
+     xlink:href="#Line1"
+     transform="translate(150,150) rotate(180)"
+     id="use20" />
+  <use
+     xlink:href="#Circle1"
+     transform="translate(150,150) rotate(180)"
+     id="use21" />
+  <use
+     xlink:href="#Path1"
+     transform="translate(150,150) rotate(180)"
+     id="use22" />
+  <use
+     xlink:href="#Path2"
+     transform="translate(150,150) rotate(180)"
+     id="use23" />
+  <use
+     xlink:href="#Circle2"
+     transform="translate(150,150) rotate(180)"
+     id="use24" />
+  <use
+     xlink:href="#Circle3"
+     transform="translate(150,150) rotate(180)"
+     id="use25" />
+  <use
+     xlink:href="#Line1"
+     transform="translate(150,150) rotate(240)"
+     id="use26" />
+  <use
+     xlink:href="#Circle1"
+     transform="translate(150,150) rotate(240)"
+     id="use27" />
+  <use
+     xlink:href="#Path1"
+     transform="translate(150,150) rotate(240)"
+     id="use28" />
+  <use
+     xlink:href="#Path2"
+     transform="translate(150,150) rotate(240)"
+     id="use29" />
+  <use
+     xlink:href="#Circle2"
+     transform="translate(150,150) rotate(240)"
+     id="use30" />
+  <use
+     xlink:href="#Circle3"
+     transform="translate(150,150) rotate(240)"
+     id="use31" />
+  <use
+     xlink:href="#Line1"
+     transform="translate(150,150) rotate(300)"
+     id="use32" />
+  <use
+     xlink:href="#Circle1"
+     transform="translate(150,150) rotate(300)"
+     id="use33" />
+  <use
+     xlink:href="#Path1"
+     transform="translate(150,150) rotate(300)"
+     id="use34" />
+  <use
+     xlink:href="#Path2"
+     transform="translate(150,150) rotate(300)"
+     id="use35" />
+  <use
+     xlink:href="#Circle2"
+     transform="translate(150,150) rotate(300)"
+     id="use36" />
+  <use
+     xlink:href="#Circle3"
+     transform="translate(150,150) rotate(300)"
+     id="use37" />
+  <text
+     xml:space="preserve"
+     id="text38"
+     style="font-size:85.3333px;font-family:'MesloLGS Nerd Font Mono';-inkscape-font-specification:'MesloLGS Nerd Font Mono';text-align:center;white-space:pre;shape-inside:url(#rect39);fill:#0000ff"
+     transform="matrix(1.6711358,0,0,1.6711358,-153.00508,-115.80622)"><tspan
+       x="105.96976"
+       y="241.4151"
+       id="tspan2"><tspan
+         style="font-weight:bold;-inkscape-font-specification:'MesloLGS Nerd Font Mono Bold'"
+         id="tspan1">B64</tspan></tspan></text>
+</svg>

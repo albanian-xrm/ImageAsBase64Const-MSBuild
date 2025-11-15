@@ -1,0 +1,49 @@
+﻿<!--
+   Copyright 2025 AlbanianXrm <albanian@xrm.al>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<BuildOutputTargetFolder>tasks</BuildOutputTargetFolder>
+		<Description>This is a MSBuild Task that converts an image to a base64 string const. Useful for XrmToolBox tool icons.</Description>
+		<PackageTags>MSBuild base64 image</PackageTags>
+		<PackageIcon>Logo.png</PackageIcon>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>	
+		<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+		<Version>1.0.0</Version>
+		<RepositoryUrl>https://github.com/albanian-xrm/ImageAsBase64Const-MSBuild.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="build/**" Pack="true" PackagePath="build" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Logo.png" />
+		<Content Include="Logo.png" Pack="true" PackagePath="\" />
+		<None Include="..\LICENSE" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Build.Tasks.Core" Version="16.11.6" PrivateAssets="All" />
+	</ItemGroup>
+
+</Project>
