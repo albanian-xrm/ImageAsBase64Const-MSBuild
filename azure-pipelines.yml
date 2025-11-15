@@ -38,7 +38,10 @@ steps:
 - task: NuGetCommand@2
   displayName: Restore AlbanianXrm.ImageAsBase64Const.Tests.sln
   inputs:
+    command: 'restore'
     restoreSolution: 'tests\AlbanianXrm.ImageAsBase64Const.Tests.sln'
+    feedsToUse: 'config'
+    nugetConfigPath: 'test\nuget.config'
 
 - task: VSBuild@1
   displayName: Build AlbanianXrm.ImageAsBase64Const.Tests.sln
