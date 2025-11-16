@@ -29,7 +29,7 @@ Simple usage example:
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="AlbanianXrm.ImageAsBase64ConstGenerator.MSBuild" Version="1.0.0" PrivateAssets="All" />
+		<PackageReference Include="AlbanianXrm.ImageAsBase64Const.MSBuild" Version="1.0.0" PrivateAssets="All" />
 	</ItemGroup>
 </Project>
 ```

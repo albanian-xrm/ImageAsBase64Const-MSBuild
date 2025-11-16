@@ -23,12 +23,9 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="AlbanianXrm.ImageAsBase64Const.MSBuild" Version="1.0.0" />
-	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="Resources\ShkoOnline32x32.png">
+		<None Include="Resources\ShkoOnline32x32.png">
 			<ClassName>Resources</ClassName>
 			<ImageAsBase64Const>ShkoOnline32x32</ImageAsBase64Const>
 		</None>
@@ -36,6 +33,10 @@
 			<ClassName>Resources</ClassName>
 			<ImageAsBase64Const>ShkoOnline80x80</ImageAsBase64Const>
 		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AlbanianXrm.ImageAsBase64Const.MSBuild" Version="1.0.1" />
 	</ItemGroup>
 
 </Project>

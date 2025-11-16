@@ -15,27 +15,18 @@
 -->
 
 <Project>
-	<ItemGroup>
-		<Compile 
-			Update="@(None->'%(Identity).g.cs')" 
-			Condition="Exists('@(None->'%(Identity).g.cs')')"
-		>
-			<DependentUpon>%(None.Identity)</DependentUpon>
-		</Compile>
-	</ItemGroup>
-
 	<UsingTask
-		TaskName="AlbanianXrm.ImageAsBase64ConstTask"		
-		AssemblyFile="$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\AlbanianXrm.ImageAsBase64Const.MSBuild.dll" 
+		TaskName="AlbanianXrm.ImageAsBase64ConstTask"
+		AssemblyFile="$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\AlbanianXrm.ImageAsBase64Const.MSBuild.dll"
 	/>
 
-	<Target 
-		Name="AlbanianXrm_PrepareImageAsBase64Const" 
+	<Target
+		Name="AlbanianXrm_PrepareImageAsBase64Const"
 		BeforeTargets="AlbanianXrm_ImageAsBase64Const"
 	>
 		<ItemGroup>
-			<ImageAsBase64Const 
-				Include="@(None)" 
+			<ImageAsBase64Const
+				Include="@(None)"
 				Condition="'%(None.ImageAsBase64Const)'!='' AND '%(None.ClassName)'!=''"
 			>
 				<ImageAsBase64Const>%(None.ImageAsBase64Const)</ImageAsBase64Const>
@@ -45,22 +36,36 @@
 		</ItemGroup>
 	</Target>
 
-	<Target 
-		Name="AlbanianXrm_ImageAsBase64Const" 
-		BeforeTargets="CoreCompile" 
-		Inputs="@(ImageAsBase64Const)" 
-		Outputs="@(ImageAsBase64Const->'%(Identity).g.cs" 
+	<Target
+		Name="AlbanianXrm_ImageAsBase64Const"
+		BeforeTargets="CoreCompile"
+		Inputs="@(ImageAsBase64Const)"
+		Outputs="@(ImageAsBase64Const->'%(Identity).g.cs"
 	>
 		<AlbanianXrm.ImageAsBase64ConstTask
 			InputFile="%(ImageAsBase64Const.Identity)"
+			IntermediateOutputPath="$(IntermediateOutputPath)"
 			Namespace="%(ImageAsBase64Const.Namespace)"
 			ClassName="%(ImageAsBase64Const.ClassName)"
 			FieldName="%(ImageAsBase64Const.ImageAsBase64Const)"
 		>
-			<Output 
-				TaskParameter="OutputFile" 
-				ItemName="ImageAsBase64ConstOutput" 
+			<Output
+				TaskParameter="OutputFile"
+				ItemName="ImageAsBase64ConstOutput"
 			/>
 		</AlbanianXrm.ImageAsBase64ConstTask>
+	</Target>
+
+	<Target
+		Name="AlbanianXrm_ReferenceImageAsBase64ConstGeneratedFiles"
+		BeforeTargets="CoreCompile"
+	>
+		<ItemGroup>
+			<Compile
+				Include="$(IntermediateOutputPath)AlbanianXrm.ImageAsBase64Const_%(None.Namespace)_%(None.ClassName)_%(None.ImageAsBase64Const).g.cs"
+				Condition="'%(None.ImageAsBase64Const)' != '' AND '%(None.ClassName)' != ''"
+				DependentUpon="%(None.Identity)"
+			/>
+		</ItemGroup>
 	</Target>
 </Project>

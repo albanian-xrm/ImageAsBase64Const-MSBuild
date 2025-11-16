@@ -26,6 +26,9 @@ namespace AlbanianXrm
         [Required]
         public string InputFile { get; set; }
 
+        [Required]
+        public string IntermediateOutputPath { get; set; }
+
         public string Namespace { get; set; }
 
         [Required]
@@ -48,7 +51,7 @@ namespace AlbanianXrm
             }
             using (var reader = new StreamReader(new CryptoStream(fileInfo.OpenRead(), base64Transform, CryptoStreamMode.Read)))
             {
-                OutputFile = InputFile + ".g.cs";
+                OutputFile = Path.Combine(IntermediateOutputPath, $"AlbanianXrm.ImageAsBase64Const_{Namespace}_{ClassName}_{FieldName}.g.cs");
                 using (var writer = new StreamWriter(OutputFile, false))
                 {
                     if (!string.IsNullOrWhiteSpace(Namespace))

@@ -14,5 +14,6 @@
    limitations under the License.
 */
 
+Console.WriteLine("Images: ");
 Console.WriteLine(Resources.ShkoOnline32x32);
 Console.WriteLine(Resources.ShkoOnline80x80);

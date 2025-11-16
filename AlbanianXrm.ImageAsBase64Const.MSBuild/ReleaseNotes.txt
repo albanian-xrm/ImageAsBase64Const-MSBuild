@@ -1,2 +1,4 @@
-﻿v1.0.0: 
- - First Release. Can convert images to Base64 strings for use as Icons in a XrmToolBox tool.
+﻿v1.0.1: 
+ - Moved generated files to `IntermediateOutputPath`
+ - Fixed documentation typo in Readme file. 
+ - Added Release Notes file to NuGet package.
